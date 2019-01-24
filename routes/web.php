@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'HomeController@ReWelcome');
+//Route::view('/','welcome');
+
+
+Route::get('hello', function(){
+    return view('hello');
+});
+
+Route::get('helloRe', function(){
+    return redirect('hello');
+});
+
+Route::get('greeting/{name?}',function ($name = 'guy'){
+    return 'hello, '.$name;
 });
