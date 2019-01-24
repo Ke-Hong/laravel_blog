@@ -23,6 +23,4 @@ Route::get('helloRe', function(){
     return redirect('hello');
 });
 
-Route::get('greeting/{name?}',function ($name = 'guy'){
-    return 'hello, '.$name;
-});
+Route::get('greeting/{name?}','GreetingController@greeting');
