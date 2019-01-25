@@ -24,3 +24,7 @@ Route::get('helloRe', function(){
 });
 
 Route::get('greeting/{name?}','GreetingController@greeting');
+
+Route::get('posts','PostController@index');
+Route::get('posts/{ids}','PostController@show');
+//Route::view('posts','posts.show');
