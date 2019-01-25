@@ -15,16 +15,19 @@ Route::get('/', 'HomeController@ReWelcome');
 //Route::view('/','welcome');
 
 
-Route::get('hello', function(){
-    return view('hello');
-});
 
-Route::get('helloRe', function(){
-    return redirect('hello');
-});
-
-Route::get('greeting/{name?}','GreetingController@greeting');
 
 Route::get('posts','PostController@index');
 Route::get('posts/{ids}','PostController@show');
 //Route::view('posts','posts.show');
+
+
+//Route::get('hello', function(){
+//    return view('hello');
+//});
+//
+//Route::get('helloRe', function(){
+//    return redirect('hello');
+//});
+//
+//Route::get('greeting/{name?}','GreetingController@greeting');
