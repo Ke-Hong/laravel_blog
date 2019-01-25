@@ -19,6 +19,7 @@ Route::get('/', 'HomeController@ReWelcome');
 
 Route::get('posts','PostController@index');
 Route::get('posts/{ids}','PostController@show');
+Route::view('about','about.index');
 //Route::view('posts','posts.show');
 
 
