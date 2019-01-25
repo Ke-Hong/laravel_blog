@@ -10,6 +10,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    {{--<link href="{{asset('css/bootstrap.min.css'}}" rel="stylesheet">--}}
     @yield('page-styles')
 </head>
 
