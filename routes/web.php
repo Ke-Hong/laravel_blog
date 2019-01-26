@@ -11,15 +11,17 @@
 |
 */
 
-Route::get('/', 'HomeController@ReWelcome');
+Route::get('/', 'HomeController@ReWelcome')->name('home.index');
 //Route::view('/','welcome');
 
 
 
 
-Route::get('posts','PostController@index');
-Route::get('posts/{ids}','PostController@show');
-Route::view('about','about.index');
+Route::get('posts','PostController@index')->name('posts.index');
+//Route::get('posts/{id}','PostController@show')->name('posts.show');
+Route::get('posts/{post}','PostController@show')->name('posts.show');
+
+Route::view('about','about.index')->name('about.index');
 //Route::view('posts','posts.show');
 
 

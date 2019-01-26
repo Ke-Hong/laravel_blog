@@ -6,8 +6,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h1 class="mt-5">那些殺不死我的，將使我更堅強</h1>
-          <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
+          <h1 class="mt-5">摔哥</h1>
+          <p class="lead">一個每天早上都帥到摔跤的男人</p>
           <ul class="list-unstyled">
             <li>Bootstrap 4.1.3</li>
             <li>jQuery 3.3.1</li>
