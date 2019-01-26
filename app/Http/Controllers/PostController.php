@@ -9,8 +9,10 @@ class PostController extends Controller
 {
     public function index() {
         $all = Post::all();
+        // Post::all() 即 SELECT * FROM posts ORDER BY created_at DESC
+        $selected =Post::orderBy('created_at','DESC')->paginate(3);//get()
         $data = [
-            'posts' => $all
+            'posts' => $selected
         ];
         return view('posts.index',$data);
     }

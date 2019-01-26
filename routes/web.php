@@ -13,10 +13,6 @@
 
 Route::get('/', 'HomeController@ReWelcome')->name('home.index');
 //Route::view('/','welcome');
-
-
-
-
 Route::get('posts','PostController@index')->name('posts.index');
 //Route::get('posts/{id}','PostController@show')->name('posts.show');
 Route::get('posts/{post}','PostController@show')->name('posts.show');
